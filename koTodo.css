@@ -1,0 +1,113 @@
+:root {
+    --main-theme: #3498db;
+    --accent-color: #ff9f04;
+    --bg-color: #6c6b6b;
+}
+
+body {
+    background-color: var(--main-theme);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button, li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+
+#itemInput {
+    border-radius: 4px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+#itemInput::placeholder {
+    color: var(--bg-color);
+}
+
+#addItem {
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+#addItem:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+    /* Puts the dot on the same line as the text */
+    list-style-position: inside;
+    /* Centers the text and the dot together */
+    text-align: center; 
+    padding: 15px;
+    color: var(--accent-color);
+}
+
+li:hover {
+    color: var(--bg-color);
+}
+
+li:active {
+    background-color: var(--bg-color);
+    transform: scale(0.98);
+}
+
+.delete-btn {
+    margin-left: 15px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.delete-btn:hover {
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.edit-btn {
+    margin-left: 15px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.edit-btn:hover{
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+}
+#clearAllBtn {
+    margin-top: 10px;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#clearAllBtn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}

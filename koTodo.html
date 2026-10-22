@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+       <meta charset="UTF-8">
+       <!-- Prepare connections to Google Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+       <!-- Load Open Sans -->
+       <link 
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
+            rel="stylesheet"
+       >
+
+       <!-- Load app's CSS -->
+       <link rel="stylesheet" type="text/css" href="koTodo.css"> 
+       <title>KOToDo Task Manager | KOCreations</title>
+    </head>
+    <body>
+        <h1>My To-Do List</h1>
+        <input type="text" id="itemInput" placeholder="Enter a new item">
+        <button type="submit" onclick="addItem()" id="addItem">Add Item</button>
+        
+        <ul id="itemList">
+
+        </ul>
+        
+        <button id="clearAllBtn">Clear All</button>
+
+        <script type="text/javascript" src="koTodo.js"></script>
+    </body>
+
+</html>
